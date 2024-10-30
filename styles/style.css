@@ -2,18 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.silkscreen-regular,
-.silkscreen-bold {
+.silkscreen-regular {
   font-family: Silkscreen, sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-.silkscreen-regular {
-  font-weight: 400;
-}
-
 .silkscreen-bold {
+  font-family: Silkscreen, sans-serif;
   font-weight: 700;
+  font-style: normal;
 }
 
 body {
@@ -21,97 +19,108 @@ body {
   margin: 0;
   min-width: 350px;
 }
-
-body > .judul {
+body > .judul{
   background-color: rgb(37, 113, 128);
   text-align: center;
-  font-size: 3em;
   margin: 0;
+  font-size: 3em;
 }
 
 header {
   background-color: rgb(37, 113, 128);
   text-align: center;
-  position: sticky;
+  position:sticky;
   top: 0;
 }
 
+header nav{
+  position: sticky;
+  top: 0; 
+}
+
 nav ul {
+  margin: 0px;
+  justify-content: center;
+  padding: 0.2em 2em;
   display: flex;
   gap: 2em;
-  margin: 0;
-  padding: 0.2em 2em;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255, 0.1);
 }
 
 nav li {
   list-style: none;
 }
-
-nav li a {
+.hidden {
+  display: none;
+}
+nav li a{
   color: black;
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
-}
-
 main {
-  display: flex;
-  justify-content: center;
-  align-items: start;
   min-height: 95vh;
-  margin: 0;
+  display: flex;
+  margin: 0px;
   background-color: antiquewhite;
+  justify-content:center ;
+  justify-items: center;
 }
-
 main h2 {
   margin: 0;
 }
-
 main p {
   max-width: 250px;
 }
 
 main > article {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   padding: 3px;
   max-width: 900px;
   align-content: start;
-  justify-content: center;
 }
 
-.pelatihan,
-aside {
-  margin: 1em;
-  padding: 1em;
-  height: fit-content;
-  border: 2px solid rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-}
-
-.pelatihan img,
-aside img {
+.pelatihan img {
   width: 100px;
-  height: 100px;
+  height: 100%;
   border-radius: 50%;
-  border: 2px solid;
+  border: 2px;
+  border-style: solid;
 }
-
+.pelatihan, aside {
+  margin: 1em;
+  height: fit-content;
+  padding: 1em;
+  border: 2px;
+  border-radius: 5px;
+  border-color: rgb(0, 0, 0, 0.6);
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .pelatihan div {
   display: flex;
   gap: 10px;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
+aside{
+  justify-content: center;
+  justify-items:center;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+}
 
-
+aside img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px;
+  border-style: solid;
+}
 
 
 input, textarea{
@@ -150,12 +159,13 @@ footer > p, form >h2{
   margin: 0;
 }
 
+
+
 @media screen and (max-width: 600px) {
   .hidden {
-    display: block;
+    display:block;
   }
-
-  main {
-    display: block;
+  main{
+    display:block;
   }
 }
