@@ -79,6 +79,7 @@ main > article {
   flex-wrap: wrap;
   padding: 3px;
   max-width: 900px;
+  align-content: start;
 }
 
 .pelatihan img {
@@ -90,7 +91,7 @@ main > article {
 }
 .pelatihan, aside {
   margin: 1em;
-  max-height: fit-content;
+  height: fit-content;
   padding: 1em;
   border: 2px;
   border-radius: 5px;
