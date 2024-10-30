@@ -59,7 +59,7 @@ nav li a{
 }
 
 main {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   margin: 0px;
   background-color: antiquewhite;
