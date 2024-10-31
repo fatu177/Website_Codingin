@@ -18,25 +18,33 @@ body {
   padding: 0;
   margin: 0;
   min-width: 350px;
+  max-height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
 }
-body > .judul{
+
+body .judul {
   background-color: rgb(37, 113, 128);
   text-align: center;
   margin: 0;
   font-size: 3em;
+
+
+}
+.judul a{
+  text-decoration: none;
+  color: black;
 }
 
 header {
   background-color: rgb(37, 113, 128);
   text-align: center;
-  position:sticky;
+  position: sticky;
   top: 0;
+  flex: 0;
 }
 
-header nav{
-  position: sticky;
-  top: 0; 
-}
 
 nav ul {
   margin: 0px;
@@ -53,7 +61,7 @@ nav li {
 .hidden {
   display: none;
 }
-nav li a{
+nav li a {
   color: black;
   text-decoration: none;
 }
@@ -62,9 +70,10 @@ main {
   min-height: 95vh;
   display: flex;
   margin: 0px;
-  background-color: antiquewhite;
-  justify-content:center ;
+ 
+  justify-content: center;
   justify-items: center;
+  flex: 1;
 }
 main h2 {
   margin: 0;
@@ -89,7 +98,8 @@ main > article {
   border: 2px;
   border-style: solid;
 }
-.pelatihan, aside {
+.pelatihan,
+aside {
   margin: 1em;
   height: fit-content;
   padding: 1em;
@@ -106,15 +116,15 @@ main > article {
   align-items: center;
 }
 
-aside{
+aside {
   justify-content: center;
-  justify-items:center;
+  justify-items: center;
   height: fit-content;
   width: fit-content;
   margin-bottom: 0;
 }
 
-aside img{
+aside img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -122,8 +132,8 @@ aside img{
   border-style: solid;
 }
 
-
-input, textarea{
+input,
+textarea {
   border-radius: 5px;
   margin: 0.3em;
   padding: 0.5em;
@@ -134,7 +144,8 @@ input, textarea{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-form > div> div, form > div{
+form > div > div,
+form > div {
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -144,28 +155,29 @@ form > div> div, form > div{
   flex-wrap: wrap;
   max-width: 900px;
 }
-form{
+form {
   margin: 0;
   background-color: rgb(253, 139, 81);
   justify-content: center;
   justify-items: center;
   align-items: center;
+  flex: 0;
 }
-footer{
+footer {
   margin: 0;
   background-color: rgb(203, 96, 64);
+  flex: 0;
 }
-footer > p, form >h2{
+footer > p,
+form > h2 {
   margin: 0;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .hidden {
-    display:block;
+    display: block;
   }
-  main{
-    display:block;
+  main {
+    display: block;
   }
 }
